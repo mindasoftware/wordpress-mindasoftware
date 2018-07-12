@@ -29,7 +29,7 @@ define('DB_USER', 'wp_mindasoftware');
 define('DB_PASSWORD', 'J96xIr17DVbwgpXw');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '192.168.10.102');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');

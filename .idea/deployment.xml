@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="XAMPP Apache" uploadOnCheckin="590cbaa8-45e7-4d75-904f-5f99a7de6ce5">
+    <serverData>
+      <paths name="XAMPP Apache">
+        <serverdata>
+          <mappings>
+            <mapping deploy="wordpress-mindasoftware" local="$PROJECT_DIR$" web="/wordpress-mindasoftware" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="XAMPP Apache" />
+  </component>
+</project>
