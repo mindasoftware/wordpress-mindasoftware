@@ -23,13 +23,13 @@
 define('DB_NAME', 'wp_mindasoftware');
 
 /** MySQL database username */
-define('DB_USER', 'wp_mindasoftware');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'J96xIr17DVbwgpXw');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', '192.168.10.102');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');

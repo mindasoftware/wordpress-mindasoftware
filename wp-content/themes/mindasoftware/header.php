@@ -69,12 +69,12 @@
 		  if ($(document).scrollTop() > 50) {
 			$('div.navigation-top').addClass('shrink');
 			$('.custom-logo-link img')
-                .attr('srcset','/wp-content/themes/mindasoftware/images/logo_black.png');
+                .attr('srcset','wp-content/themes/mindasoftware/images/logo_black.png');
 
 			} else {
 			$('div.navigation-top').removeClass('shrink');
 			$('.custom-logo-link img')  
-                .attr('srcset','/wp-content/themes/mindasoftware/images/logo_white.png');
+                .attr('srcset','wp-content/themes/mindasoftware/images/logo_white.png');
 
 			
 		  }

@@ -30,7 +30,7 @@
 				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 			</div>
 			<div class="col-5">
-				<img src="/wp-content/themes/mindasoftware/images/avatar.png">
+				<img src="wp-content/themes/mindasoftware/images/avatar.png">
 				<?php
 					/* translators: %s: Name of current post */
 					the_content( sprintf(
