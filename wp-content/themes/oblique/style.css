@@ -16,6 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Oblique is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 */
 
+
 body {
 	color: #50545c;
 	background-color: #1c1c1c;
@@ -1006,7 +1007,7 @@ Structure
 	margin-bottom: 45px;
 }
 .site-branding {
-	padding: 200px 0;
+	padding: 200px 0 !important;
 	text-align: center;
 }
 .site-logo {
@@ -1066,9 +1067,6 @@ Structure
 Menu
 --------------------------------------------------------------*/
 
-.main-navigation {
-	display: none;
-}
 .slicknav_btn {
 	display: none;
 }
@@ -2444,4 +2442,487 @@ Responsive
 	.single-product div.single_product_bottom_svg {
 		bottom: -19px;
 	}
+}
+
+.custom-logo {
+	width:300px !important;
+}
+
+.custom-logo-link {
+	display: inline-block;
+	padding-right: 1em;
+	vertical-align: middle;
+	width: auto;
+}
+
+.custom-logo-link img {
+	display: inline-block;
+	max-height: 80px;
+	width: auto;
+}
+
+body.home.title-tagline-hidden.has-header-image .custom-logo-link img,
+body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
+	max-height: 200px;
+	max-width: 100%;
+}
+
+.custom-logo-link a:hover,
+.custom-logo-link a:focus {
+	opacity: 0.9;
+}
+
+
+/*--------------------------------------------------------------
+12.0 Navigation
+--------------------------------------------------------------*/
+
+.navigation-top {
+	background: transparent;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	font-size: 16px;
+	font-size: 1rem;
+	position: relative;
+}
+
+.navigation-top .wrap {
+	max-width: 1200px;
+	padding: 0;
+}
+
+.navigation-top a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a {
+	color: #0085ba;
+}
+
+.main-navigation {
+	clear: both;
+	display: block;
+}
+
+.main-navigation ul {
+	background: #fff;
+	list-style: none;
+	margin: 0;
+	padding: 0 1.5em;
+	text-align: left;
+}
+
+/* Hide the menu on small screens when JavaScript is available.
+ * It only works with JavaScript.
+ */
+
+.js .main-navigation ul,
+.main-navigation .menu-item-has-children > a > .icon,
+.main-navigation .page_item_has_children > a > .icon,
+.main-navigation ul a > .icon {
+	display: none;
+}
+
+.main-navigation > div > ul {
+	border-top: 1px solid #eee;
+	padding: 0.75em 1.695em;
+}
+
+.js .main-navigation.toggled-on > div > ul {
+	display: block;
+}
+
+.main-navigation ul ul {
+	padding: 0 0 0 1.5em;
+}
+
+.main-navigation ul ul.toggled-on {
+	display: block;
+}
+
+.main-navigation ul ul a {
+	letter-spacing: 0;
+	padding: 0.4em 0;
+	position: relative;
+	text-transform: none;
+}
+
+.main-navigation li {
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+
+.main-navigation li li,
+.main-navigation li:last-child {
+	border: 0;
+}
+
+.main-navigation a {
+	display: block;
+	padding: 0.5em 0;
+	text-decoration: none;
+}
+
+.main-navigation a:hover {
+	color: #0085ba;
+}
+
+
+/* Horatio Styles */
+
+.menu--horatio{
+	padding-right: 10px !important;
+}
+
+.menu--horatio .menu-item {
+	margin-left: 3px;
+	margin-right: 3px;
+	color: #0085ba;
+}
+
+.menu--horatio .menu-item {
+	position: relative;
+	-webkit-transition: color .25s;
+	transition: color .25s;
+}
+
+.menu--horatio .menu-item a {
+	position: relative;
+	color: inherit;
+}
+
+.menu--horatio .current-menu-item{
+	color: #fff;
+}
+
+.shrink ul.menu--horatio .current-menu-item {
+	color: rgba(0,0,0,0.87);
+}
+
+.shrink ul.menu--horatio .current-menu-item{
+	color: rgba(0,0,0,0.87);
+	border: 0px solid currentColor;
+}
+
+
+.shrink ul.menu--horatio .menu-item:hover {
+	color: #0085ba;
+}
+
+.menu--horatio .menu-item:hover {
+	color: #fff;
+}
+
+.menu--horatio .menu-item::before,
+.menu--horatio .menu-item::after,
+.menu--horatio .menu-item a::before,
+.menu--horatio .menu-item a::after {
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 2px solid currentColor;
+}
+
+.shrink ul.menu--horatio .menu-item::before,
+.shrink ul.menu--horatio .menu-item::after,
+.shrink ul.menu--horatio .menu-item a::before,
+.shrink ul.menu--horatio .menu-item a::after {
+	border-bottom: 2px solid currentColor;
+	border-top: 0px solid currentColor;
+	border-right: 0px solid currentColor;
+	border-left: 0px solid currentColor;
+}
+
+.menu--horatio .menu-item::before {
+	border-width: 0 0 0 2px;
+	-webkit-transform-origin: left bottom;
+	transform-origin: left bottom;
+}
+
+.menu--horatio .menu-item::after {
+	border-width: 0 2px 0 0;
+	-webkit-transform-origin: right top;
+	transform-origin: right top;
+}
+
+.menu--horatio .menu-item a::before,
+.menu--horatio .menu-item a::after {
+	z-index: 2;
+}
+
+.menu--horatio .menu-item a::before {
+	border-width: 2px 0 0;
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+}
+
+.menu--horatio .menu-item a::after {
+	border-width: 0 0 2px;
+	-webkit-transform-origin: right bottom;
+	transform-origin: right bottom;
+}
+
+.menu--horatio .current-menu-item::before,
+.menu--horatio .current-menu-item::after,
+.menu--horatio .menu-item:hover::before,
+.menu--horatio .menu-item:hover::after,
+.menu--horatio .current-menu-item a::before,
+.menu--horatio .current-menu-item a::after,
+.menu--horatio .menu-item:hover a::before,
+.menu--horatio .menu-item:hover a::after {
+	content: '';
+}
+
+.menu--horatio .menu-item:not(.current-menu-item):hover::before,
+.menu--horatio .menu-item:not(.current-menu-item):hover::after,
+.menu--horatio .menu-item:not(.current-menu-item):hover a::before,
+.menu--horatio .menu-item:not(.current-menu-item):hover a::after {
+	-webkit-animation: horatio-anim .6s ease-in-out;
+	animation: horatio-anim .6s ease-in-out;
+}
+
+.menu--horatio .menu-item:not(.current-menu-item):hover::before {
+	-webkit-animation-delay: -.45s;
+	animation-delay: -.45s;
+}
+
+.menu--horatio .menu-item:not(.current-menu-item):hover a::before {
+	-webkit-animation-delay: -.3s;
+	animation-delay: -.3s;
+}
+
+.menu--horatio .menu-item:not(.current-menu-item):hover::after {
+	-webkit-animation-delay: -.15s;
+	animation-delay: -.15s;
+}
+
+.menu--horatio .menu-item:not(.current-menu-item):hover a::after {
+	-webkit-animation-delay: 0;
+	animation-delay: 0;
+}
+
+@-webkit-keyframes horatio-anim {
+	0%, 33% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(1.5);
+		transform: rotate(45deg) scale(1.5);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes horatio-anim {
+	0%, 33% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(1.5);
+		transform: rotate(45deg) scale(1.5);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+/* End: Horatio Styles */
+
+/* Main Navigation */
+
+.js .menu-toggle,
+.js .dropdown-toggle {
+	display: none;
+}
+
+.main-navigation {
+	width: auto;
+}
+
+.js .main-navigation ul,
+.js .main-navigation ul ul,
+.js .main-navigation > div > ul {
+	display: block !important;
+	text-align: right !important;
+}
+
+.main-navigation ul {
+	background: transparent;
+	padding: 0;
+}
+
+.main-navigation > div > ul {
+	border: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.main-navigation li {
+	border: 0;
+	display: inline-block;
+}
+
+.main-navigation li li {
+	display: block;
+}
+
+.main-navigation a {
+	padding: 1em 1.25em;
+}
+
+.main-navigation ul ul {
+	background: #fff;
+	border: 1px solid #bbb;
+	left: -999em;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	z-index: 99999;
+}
+
+.main-navigation ul li.menu-item-has-children:before,
+.main-navigation ul li.menu-item-has-children:after,
+.main-navigation ul li.page_item_has_children:before,
+.main-navigation ul li.page_item_has_children:after {
+	border-style: solid;
+	border-width: 0 6px 6px;
+	content: "";
+	display: none;
+	height: 0;
+	position: absolute;
+	right: 1em;
+	bottom: -1px;
+	width: 0;
+	z-index: 100000;
+}
+
+.main-navigation ul li.menu-item-has-children.focus:before,
+.main-navigation ul li.menu-item-has-children:hover:before,
+.main-navigation ul li.menu-item-has-children.focus:after,
+.main-navigation ul li.menu-item-has-children:hover:after,
+.main-navigation ul li.page_item_has_children.focus:before,
+.main-navigation ul li.page_item_has_children:hover:before,
+.main-navigation ul li.page_item_has_children.focus:after,
+.main-navigation ul li.page_item_has_children:hover:after {
+	display: block;
+}
+
+.main-navigation ul li.menu-item-has-children:before,
+.main-navigation ul li.page_item_has_children:before {
+	border-color: transparent transparent #bbb;
+	bottom: 0;
+}
+
+.main-navigation ul li.menu-item-has-children:after,
+.main-navigation ul li.page_item_has_children:after {
+	border-color: transparent transparent #fff;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+	right: auto;
+}
+
+.main-navigation ul ul a {
+	padding: 0.75em 1.25em;
+	width: 16em;
+}
+
+.main-navigation li li {
+	-webkit-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.main-navigation li li:hover,
+.main-navigation li li.focus {
+	background: #767676;
+}
+
+.main-navigation li li a {
+	-webkit-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+.main-navigation li li.focus > a,
+.main-navigation li li:focus > a,
+.main-navigation li li:hover > a,
+.main-navigation li li a:hover,
+.main-navigation li li a:focus,
+.main-navigation li li.current_page_item a:hover,
+.main-navigation li li.current-menu-item a:hover,
+.main-navigation li li.current_page_item a:focus,
+.main-navigation li li.current-menu-item a:focus {
+	color: #fff;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: 0.5em;
+	right: auto;
+}
+
+.main-navigation .menu-item-has-children > a > .icon,
+.main-navigation .page_item_has_children > a > .icon {
+	display: inline;
+	left: 5px;
+	position: relative;
+	top: -1px;
+}
+
+.main-navigation ul ul .menu-item-has-children > a > .icon,
+.main-navigation ul ul .page_item_has_children > a > .icon {
+	margin-top: -9px;
+	left: auto;
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	transform: rotate(-90deg);
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	margin-top: -1px;
+	top: 0;
+}
+
+.main-navigation ul ul li.menu-item-has-children.focus:before,
+.main-navigation ul ul li.menu-item-has-children:hover:before,
+.main-navigation ul ul li.menu-item-has-children.focus:after,
+.main-navigation ul ul li.menu-item-has-children:hover:after,
+.main-navigation ul ul li.page_item_has_children.focus:before,
+.main-navigation ul ul li.page_item_has_children:hover:before,
+.main-navigation ul ul li.page_item_has_children.focus:after,
+.main-navigation ul ul li.page_item_has_children:hover:after {
+	display: none;
+}
+
+.site-header .site-navigation-fixed .menu-scroll-down {
+	display: none;
+}
+
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.custom_logo_image {
+	float:left;
 }
