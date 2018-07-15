@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-
+<div class="scroll-section">
     <div class="navigation-top">
         <div class="wrap">
 
@@ -64,6 +64,7 @@
 			<?php oblique_svg_1(); ?>
 		</div>		
 	</header><!-- #masthead -->
+</div>
 
 	<div id="content" class="site-content">
 		<div class="container content-wrapper">
@@ -83,6 +84,7 @@
                 function Scroller()
                 {
                     if ($(document).scrollTop() > 50) {
+
                         $('div.navigation-top').addClass('shrink site-navigation-fixed');
                         $('.custom-logo-link img')
                             .attr('srcset','<?php bloginfo('template_directory');?>/images/logo_black.png');
@@ -93,5 +95,7 @@
                             .attr('srcset','<?php bloginfo('template_directory');?>/images/logo_white.png');
                     }
                 }
+
+
 
             </script>

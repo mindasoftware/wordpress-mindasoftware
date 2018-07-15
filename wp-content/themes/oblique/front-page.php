@@ -12,7 +12,9 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
+
+
+    <div id="primary" class="content-area scroll-section">
         <main id="main" class="site-main" role="main">
             <section>
                 <div class="svg-container svg-block page-header-svg">
@@ -36,7 +38,7 @@ get_header(); ?>
         </main><!-- #main -->
     </div><!-- #primary -->
 
-    <div id="secondary" class="content-area">
+    <div id="secondary" class="content-area scroll-section">
         <main id="main" class="site-main" role="main">
             <section>
                 <div class="svg-container svg-block page-header-svg">
@@ -70,7 +72,7 @@ get_header(); ?>
         </main><!-- #main -->
     </div><!-- #secondary -->
 
-    <div id="third" class="content-area">
+    <div id="third" class="content-area scroll-section">
         <main id="main" class="site-main" role="main">
             <section>
                 <div class="svg-container svg-block page-header-svg">
@@ -100,7 +102,7 @@ get_header(); ?>
     </div><!-- #third -->
 
 
-    <div id="four" class="content-area">
+    <div id="four" class="content-area scroll-section">
         <main id="main" class="site-main" role="main">
 
             <div id="ob-grid" class="grid-layout" style="display: block; position: relative; height: 427px;">

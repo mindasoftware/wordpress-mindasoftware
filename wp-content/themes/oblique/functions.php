@@ -487,7 +487,8 @@ add_action( 'oblique_footer', 'oblique_pro_footer_menu' );
 
 function scroll_theme_scripts() {
 
-    wp_enqueue_script( 'scrollify-js', get_template_directory_uri() . '/js/jquery.scrollify.js', array( 'jquery' ), '1.0.0', true );
+    wp_enqueue_script( 'scrollify-js', get_template_directory_uri() . '/js/scrollify/jquery.scrollify.js', array( 'jquery' ), '1.0.0', true );
+    wp_enqueue_script( 'scrollify-config-js', get_template_directory_uri() . '/js/scrollify/scrollifyConfig.js', array( 'jquery','scrollify-js' ), '1.0.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'scroll_theme_scripts' );
