@@ -30,6 +30,7 @@
 
 			<?php if ( 'post' == get_post_type() && ! get_theme_mod( 'meta_index' ) ) : ?>
 			<div class="entry-meta">
+
 				<?php oblique_posted_on(); ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
@@ -37,7 +38,7 @@
 
 		<div class="entry-content">
 			<?php the_excerpt(); ?>
-
+            <h1> global</h1>
 			<?php
 				wp_link_pages(
 					array(

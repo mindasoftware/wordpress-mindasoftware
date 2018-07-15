@@ -30,14 +30,14 @@
         <div class="wrap">
 
             <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'oblique' ); ?>">
-                <div class="custom_logo_image animated fadeIn">
+                <div class="custom_logo_image">
                     <?php the_custom_logo(); ?>
                 </div>
 
                 <?php wp_nav_menu( array(
                     'theme_location' => 'top',
                     'menu_id'        => 'top-menu',
-                    'menu_class' =>'menu--horatio animated fadeIn',
+                    'menu_class' =>'menu--horatio',
                 ) ); ?>
 
             </nav><!-- #site-navigation -->
