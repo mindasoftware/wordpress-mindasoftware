@@ -55,7 +55,6 @@
 				<?php  /* Show only site title and description */ ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-                <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 
 			</div><!-- .site-branding -->
 		</div>
@@ -71,18 +70,16 @@
                 $ = jQuery;
                 $(window).scroll(function() {
                     if ($(document).scrollTop() > 50) {
-                        $('div.navigation-top').addClass('shrink');
+                        $('div.navigation-top').addClass('shrink site-navigation-fixed');
                         $('.custom-logo-link img')
-                            .attr('srcset','wp-content/themes/mindasoftware/images/logo_black.png');
+                            .attr('srcset','<?php bloginfo('template_directory');?>/images/logo_black.png');
 
                     } else {
-                        $('div.navigation-top').removeClass('shrink');
+                        $('div.navigation-top').removeClass('shrink site-navigation-fixed');
                         $('.custom-logo-link img')
-                            .attr('srcset','wp-content/themes/mindasoftware/images/logo_white.png');
+                            .attr('srcset','<?php bloginfo('template_directory');?>/images/logo_white.png');
 
 
                     }
                 });
-
-
             </script>
