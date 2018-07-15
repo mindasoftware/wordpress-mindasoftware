@@ -17,7 +17,13 @@ $( function() {
         onStart: {
             duration: 280, // ms
             render: function ( $container ) {
+                $( "h1" ).addClass( 'fadeOutDown' ).removeClass( 'fadeInDown' );
+                $( "h2" ).addClass( 'fadeOutLeft' ).removeClass( 'fadeInLeft' );
+                $( "h3" ).addClass( 'fadeOutRight' ).removeClass( 'fadeInRight' );
+
                 $container.addClass( 'slide-out' );
+
+
             }
         },
         onAfter: function($container ) {
@@ -36,6 +42,7 @@ $( function() {
                 } );
             }
             $container.removeClass( 'slide-out' );
+
         }
     };
 

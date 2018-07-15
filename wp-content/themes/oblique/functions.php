@@ -482,3 +482,23 @@ function oblique_pro_footer_menu() {
 
 }
 add_action( 'oblique_footer', 'oblique_pro_footer_menu' );
+
+
+
+function scroll_theme_scripts() {
+
+    wp_enqueue_script( 'scrollify-js', get_template_directory_uri() . '/js/jquery.scrollify.js', array( 'jquery' ), '1.0.0', true );
+
+}
+add_action( 'wp_enqueue_scripts', 'scroll_theme_scripts' );
+
+function reaload_theme_scripts() {
+
+    wp_enqueue_style( 'reload', get_template_directory_uri() . "/style/reload.css", array( )  );
+    wp_enqueue_script( 'smoothstate-js', get_template_directory_uri() . '/js/reload/jquery.smoothState.js', array( 'jquery' ), '0.5.2', true );
+    wp_enqueue_script( 'script-js', get_template_directory_uri() . '/js/reload/script.js', array( 'jquery','smoothstate-js' ), '1.0.0', true );
+
+}
+add_action( 'wp_enqueue_scripts', 'reaload_theme_scripts' );
+
+

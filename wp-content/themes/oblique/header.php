@@ -56,7 +56,7 @@
 				<?php  /* Show only site title and description */ ?>
 					<h1 class="header-title animated fadeInDown">CZY PAMIĘTAJĄ PAŃSTWO O WIZERUNKU W SIECI?</h1>
 					<h2 class="site-description animated fadeInLeft">Naszą specjalnością jest projektowanie stron www </h2>
-                    <h2 class="site-description animated fadeInRight"><?php bloginfo( 'description' ); ?></h2>
+                    <h3 class="site-description animated fadeInRight"><?php bloginfo( 'description' ); ?></h3>
 
 			</div><!-- .site-branding -->
 		</div>
