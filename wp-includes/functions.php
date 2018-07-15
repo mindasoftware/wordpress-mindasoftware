@@ -9,7 +9,7 @@ require( ABSPATH . WPINC . '/option.php' );
 
 /**
  * Convert given date string into a different format.
- *
+ *wp_enqueue_script
  * $format should be either a PHP date format string, e.g. 'U' for a Unix
  * timestamp, or 'G' for a Unix timestamp assuming that $date is GMT.
  *
@@ -23,6 +23,9 @@ require( ABSPATH . WPINC . '/option.php' );
  * @param bool   $translate Whether the return date should be translated. Default true.
  * @return string|int|bool Formatted date string or Unix timestamp. False if $date is empty.
  */
+
+
+
 function mysql2date( $format, $date, $translate = true ) {
 	if ( empty( $date ) )
 		return false;
@@ -5269,6 +5272,7 @@ function wp_checkdate( $month, $day, $year, $source_date ) {
  *
  * @since 3.6.0
  */
+
 function wp_auth_check_load() {
 	if ( ! is_admin() && ! is_user_logged_in() )
 		return;
@@ -5299,6 +5303,15 @@ function wp_auth_check_load() {
 		add_action( 'wp_print_footer_scripts', 'wp_auth_check_html', 5 );
 	}
 }
+
+function reaload_theme_scripts() {
+    wp_enqueue_script( 'smoothstate-js', get_template_directory_uri() . '/js/reload/jquery.smoothState.js', array( 'jquery' ), '0.5.2', true );
+    wp_enqueue_script( 'script-js', get_template_directory_uri() . '/js/reload/script.js', array( 'jquery','smoothstate-js' ), '1.0.0', true );
+
+}
+add_action( 'wp_enqueue_scripts', 'reaload_theme_scripts' );
+
+
 
 /**
  * Output the HTML that shows the wp-login dialog when the user is no longer logged in.
