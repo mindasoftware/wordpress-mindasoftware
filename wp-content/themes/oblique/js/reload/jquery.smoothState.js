@@ -79,7 +79,7 @@
             loadingClass: 'is-loading',
 
             /** Scroll to top after onStart and scroll to hash after onReady */
-            scroll: true,
+            scroll: false,
 
             /**
              * A function that can be used to alter the ajax request settings before it is called
