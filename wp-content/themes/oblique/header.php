@@ -12,7 +12,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) : ?>
 	<?php if ( get_theme_mod( 'site_favicon' ) ) : ?>
@@ -54,9 +54,9 @@
 
 
 				<?php  /* Show only site title and description */ ?>
-					<h1 class="header-title animated fadeInDown">Czy pamiętają Państwo o wizerunku firmy w sieci?</h1>
-					<h2 class="site-description animated fadeInLeft"><?php bloginfo( 'description' ); ?></h2>
-                    <h2 class="site-description animated fadeInRight">Naszą specjalnością jest projektowanie stron www </h2>
+					<h1 class="header-title animated fadeInDown">CZY PAMIĘTAJĄ PAŃSTWO O WIZERUNKU W SIECI?</h1>
+					<h2 class="site-description animated fadeInLeft">Naszą specjalnością jest projektowanie stron www </h2>
+                    <h2 class="site-description animated fadeInRight"><?php bloginfo( 'description' ); ?></h2>
 
 			</div><!-- .site-branding -->
 		</div>
